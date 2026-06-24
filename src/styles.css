@@ -30,6 +30,8 @@
   --primary-foreground: oklch(1 0 0);
   --gradient-ink: linear-gradient(135deg, oklch(0.15 0.05 310), oklch(0.05 0.02 310));
   --shadow-ink: 0 30px 60px -25px color-mix(in oklab, var(--accent) 45%, transparent);
+  --hover-light: oklch(0.92 0.01 310);
+  --hover-lavender: oklch(0.72 0.1 310);
 }
 
 
@@ -73,6 +75,12 @@
 }
 @utility text-ink {
   color: var(--ink);
+}
+@utility text-hover-light {
+  color: var(--hover-light);
+}
+@utility text-hover-lavender {
+  color: var(--hover-lavender);
 }
 
 
