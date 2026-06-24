@@ -76,6 +76,12 @@
 @utility text-ink {
   color: var(--ink);
 }
+@utility text-hover-light {
+  color: var(--hover-light);
+}
+@utility text-hover-lavender {
+  color: var(--hover-lavender);
+}
 
 
 /* Subtle fade-in on scroll */
