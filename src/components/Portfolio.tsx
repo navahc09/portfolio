@@ -285,7 +285,7 @@ export function Portfolio() {
                       <div className="flex h-12 w-12 items-center justify-center border border-hair bg-muted transition-colors group-hover:border-accent">
                         <Icon size={22} className="text-accent" strokeWidth={1.5} />
                       </div>
-                      <GitPullRequest size={18} className="text-foreground/30 transition-colors group-hover:text-accent" />
+                      <GitPullRequest size={18} className="text-foreground/30 transition-colors group-hover:text-hover-lavender" />
                     </div>
                     <p className="mt-10 text-xs uppercase tracking-[0.24em] text-foreground/50">{o.org}</p>
                     <h3 className="mt-3 font-serif text-2xl leading-snug md:text-[1.7rem]">{o.title}</h3>
@@ -313,8 +313,8 @@ export function Portfolio() {
                     </div>
                     <p className="mt-10 text-[10px] uppercase tracking-[0.28em] text-foreground/50 transition-colors group-hover:text-background/60">{p.tag}</p>
                     <h3 className="mt-3 font-serif text-2xl leading-snug">{p.name}</h3>
-                    <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground/70 transition-colors group-hover:text-background/80">{p.desc}</p>
-                    <span className="mt-10 inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-accent transition-colors group-hover:text-background">
+                    <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground/70 transition-colors group-hover:text-hover-light">{p.desc}</p>
+                    <span className="mt-10 inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-accent transition-colors group-hover:text-hover-light">
                       Case Study <ArrowUpRight size={14} />
                     </span>
                   </article>
@@ -364,11 +364,11 @@ export function Portfolio() {
                       <Icon size={22} strokeWidth={1.4} className="text-accent" />
                     </div>
                     <div className="mt-12">
-                      <p className="text-[10px] uppercase tracking-[0.28em] text-foreground/50 transition-colors group-hover:text-background/60">
+                      <p className="text-[10px] uppercase tracking-[0.28em] text-foreground/50 transition-colors group-hover:text-hover-light/60">
                         {a.label}
                       </p>
                       <p className="mt-3 font-serif text-3xl leading-tight">{a.value}</p>
-                      <p className="mt-2 text-sm text-foreground/60 transition-colors group-hover:text-background/70">{a.sub}</p>
+                      <p className="mt-2 text-sm text-foreground/60 transition-colors group-hover:text-hover-light/80">{a.sub}</p>
                     </div>
                   </div>
                 </Reveal>
@@ -457,15 +457,15 @@ function ContactLink({
       href={href}
       target={external ? "_blank" : undefined}
       rel={external ? "noreferrer noopener" : undefined}
-      className="group flex items-center justify-between bg-background p-8 transition-all hover:bg-ink hover:text-background"
+      className="group flex items-center justify-between bg-background p-8 transition-all hover:bg-ink hover:text-hover-light"
     >
       <div className="min-w-0">
-        <p className="text-[10px] uppercase tracking-[0.28em] text-foreground/50 transition-colors group-hover:text-background/60">{label}</p>
-        <p className="mt-3 truncate font-serif text-lg transition-colors group-hover:text-accent">
+        <p className="text-[10px] uppercase tracking-[0.28em] text-foreground/50 transition-colors group-hover:text-hover-light/60">{label}</p>
+        <p className="mt-3 truncate font-serif text-lg transition-colors group-hover:text-hover-lavender">
           {value}
         </p>
       </div>
-      <div className="ml-4 flex shrink-0 items-center gap-3 text-foreground/60 transition-colors group-hover:text-accent">
+      <div className="ml-4 flex shrink-0 items-center gap-3 text-foreground/60 transition-colors group-hover:text-hover-lavender">
         <Icon size={20} strokeWidth={1.6} />
         <ExternalLink size={14} className="opacity-0 transition-opacity group-hover:opacity-100" />
       </div>
