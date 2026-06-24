@@ -24,10 +24,14 @@
   --accent: oklch(0.32 0.13 310);            /* deep elegant purple ~#4A0E4E */
   --accent-foreground: oklch(1 0 0);
   --accent-soft: oklch(0.45 0.18 305);
+  --ink: oklch(0.18 0.04 310);               /* near-black w/ purple undertone */
   --border: oklch(0.9 0 0);
   --primary: oklch(0 0 0);
   --primary-foreground: oklch(1 0 0);
+  --gradient-ink: linear-gradient(135deg, oklch(0.15 0.05 310), oklch(0.05 0.02 310));
+  --shadow-ink: 0 30px 60px -25px color-mix(in oklab, var(--accent) 45%, transparent);
 }
+
 
 @layer base {
   * {
@@ -61,6 +65,16 @@
 @utility border-hair {
   border-color: var(--border);
 }
+@utility bg-ink {
+  background: var(--gradient-ink);
+}
+@utility shadow-ink {
+  box-shadow: var(--shadow-ink);
+}
+@utility text-ink {
+  color: var(--ink);
+}
+
 
 /* Subtle fade-in on scroll */
 @utility reveal {
