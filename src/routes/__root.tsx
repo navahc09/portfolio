@@ -10,7 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
+import favicon from "../images/favicon4.png";
 
 function NotFoundComponent() {
   return (
@@ -37,9 +37,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -77,15 +74,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Shubham Chavan — Backend & AI Engineer" },
-      { name: "description", content: "Portfolio of Shubham Chavan — Backend Systems, AI Agents, and Competitive Programming." },
+      { title: "Shubham Chavan | Backend & AI Engineer" },
+      { name: "description", content: "Portfolio of Shubham Chavan | Backend Systems, AI Agents, and Competitive Programming." },
       { name: "author", content: "Shubham Chavan" },
-      { property: "og:title", content: "Shubham Chavan — Backend & AI Engineer" },
-      { property: "og:description", content: "Portfolio of Shubham Chavan — Backend Systems, AI Agents, and Competitive Programming." },
+      { property: "og:title", content: "Shubham Chavan | Backend & AI Engineer" },
+      { property: "og:description", content: "Portfolio of Shubham Chavan | Backend Systems, AI Agents, and Competitive Programming." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
     links: [
+      { rel: "icon", href: favicon },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },

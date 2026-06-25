@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "#work", label: "Work" },
+  { href: "#open-source", label: "Work" },
   { href: "#experience", label: "Experience" },
-  { href: "#open-source", label: "Open Source" },
-  { href: "#achievements", label: "Achievements" },
+  { href: "#achievements", label: "Milestones" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -22,9 +21,8 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? "backdrop-blur-md bg-background/80 border-b border-hair" : "bg-transparent"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? "backdrop-blur-md bg-background/80 border-b border-hair" : "bg-transparent"
+        }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <a href="#top" className="font-serif text-lg tracking-tight">

@@ -4,13 +4,13 @@ import { Portfolio } from "@/components/Portfolio";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Shubham Chavan — Backend & AI Engineer" },
+      { title: "Shubham Chavan | Backend & AI Engineer" },
       {
         name: "description",
         content:
-          "Portfolio of Shubham Chavan — Backend Systems, AI Agents, and Competitive Programming. B.E. IT at PICT, Pune.",
+          "Portfolio of Shubham Chavan | Backend Systems, AI Agents, and Competitive Programming. B.E. IT at PICT, Pune.",
       },
-      { property: "og:title", content: "Shubham Chavan — Backend & AI Engineer" },
+      { property: "og:title", content: "Shubham Chavan | Backend & AI Engineer" },
       {
         property: "og:description",
         content:
