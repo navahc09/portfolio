@@ -118,7 +118,7 @@ export function Portfolio() {
             </Reveal>
             <Reveal delay={380}>
               <p className="mt-10 max-w-2xl text-lg leading-relaxed text-foreground/70">
-                I build scalable backend systems, architect AI agents, and leetcode hard problems.
+                I build scalable backend systems, architect AI agents, and solve leetcode hard problems.
                 When I'm not coding, I'm usually reading about economics, following geopolitics, or
                 staying up way too late for a great TV show.{" "}
                 <span className="text-foreground">Currently engineering at Pipeline AI</span>{" "}
